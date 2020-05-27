@@ -1,3 +1,12 @@
 # print ("Which kind of Di are you wanting to roll?" \n)
-def menu() :
-    print ("Which kind of D&D Di are you wanting to roll? \n D4 \n D6 \n D8 \n D10 \n D12 \n D20 \n D100 \n Quit")
+def selectionMenu():
+    print ("Which kind of D&D Di are you wanting to roll?")
+    print("1. D4")
+    print("2. D6")
+    print("3. D8")
+    print("4. D10")
+    print("5. D12")
+    print("6. D20")
+    Print("7. D100")
+    Print("8. Quit")
+    sekect = int(input("Select a Number: "))
