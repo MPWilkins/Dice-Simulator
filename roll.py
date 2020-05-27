@@ -9,9 +9,10 @@ def selectionMenu():
     print("4. D10")
     print("5. D12")
     print("6. D20")
-    Print("7. D100")
-    Print("8. Quit")
+    print("7. D100")
+    print("8. Quit")
     select = int(input("Select a Number: "))
+    
     # First batch will not include modifiers
     if select == 1:
         di_Four()
@@ -55,4 +56,4 @@ def di_Hundred():
     print(random.randint(1, 100))
         
 # run program
-selectionMenu
+selectionMenu()
