@@ -1,3 +1,5 @@
+# Todo - Loop until the user selects the quit option.
+
 #This should allow me to find a random int in a set range.
 import random
 
@@ -11,6 +13,7 @@ def selectionMenu():
     print("6. D20")
     print("7. D100")
     print("8. Quit")
+        
     select = int(input("Select a Number: "))
     
     # First batch will not include modifiers
@@ -31,8 +34,9 @@ def selectionMenu():
     elif select == 8:
         exit
     else:
-        print("Invalid Number. Please select a Valid Number.")
-        selectionMenu()
+        print("Invalid Number. Please select a Valid Number. \n")
+        selectionMenu() # runs program again if outside of parameters
+        
         
 def di_Four():
     print(random.randint(1, 4))
@@ -57,3 +61,4 @@ def di_Hundred():
         
 # run program
 selectionMenu()
+
