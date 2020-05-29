@@ -19,27 +19,43 @@ def selectionMenu():
     # First batch will not include modifiers
     if select == 1:
         di_Four()
-        selectionMenu()
+        roll_Again()
     elif select == 2:
         di_Six()
+        roll_Again()
     elif select == 3:
         di_Eight()
+        roll_Again()
     elif select == 4:
         di_Ten()
+        roll_Again()
     elif select == 5:
         di_Twelve()
+        roll_Again()
     elif select == 6:
         di_Twenty()
+        roll_Again()
     elif select == 7:
         di_Hundred()
+        roll_Again()
     elif select == 8:
         exit
     else:
         print("Invalid Number. Please select a Valid Number. \n")
         selectionMenu() # runs program again if outside of parameters
         
-
-
+# Asks the user if another di should be rolled.
+# for a multi=select statement with numberous input, use the keyword "in" instead of == and put the answers in a square bracket for the right answer.
+def roll_Again():
+    select = input("Would you like to roll another Di Y/N: ")
+    if select in ['y', 'Y']:
+        selectionMenu()
+    elif select in ['n', 'N']:
+        exit
+    else:
+        print("Please use either 'Y' or 'N.' \n")
+        roll_Again()
+    
         
         
 def di_Four():
