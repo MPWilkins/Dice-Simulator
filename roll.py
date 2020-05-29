@@ -14,11 +14,12 @@ def selectionMenu():
     print("7. D100")
     print("8. Quit")
         
-    select = int(input("Select a Number: "))
+    select = int(input("Select a Di to Roll: "))
     
     # First batch will not include modifiers
     if select == 1:
         di_Four()
+        selectionMenu()
     elif select == 2:
         di_Six()
     elif select == 3:
@@ -37,27 +38,30 @@ def selectionMenu():
         print("Invalid Number. Please select a Valid Number. \n")
         selectionMenu() # runs program again if outside of parameters
         
+
+
+        
         
 def di_Four():
-    print(random.randint(1, 4))
+    print(random.randint(1, 4), '\n')
     
 def di_Six():
-    print(random.randint(1, 6))
+    print(random.randint(1, 6), '\n')
     
 def di_Eight():
-    print(random.randint(1, 8))
+    print(random.randint(1, 8), '\n')
     
 def di_Ten():
-    print(random.randint(1, 10))
+    print(random.randint(1, 10), '\n')
     
 def di_Twelve():
- print(random.randint(1, 12))
+ print(random.randint(1, 12), '\n')
     
 def di_Twenty():
-    print(random.randint(1, 20))
+    print(random.randint(1, 20), '\n')
     
 def di_Hundred():   
-    print(random.randint(1, 100))
+    print(random.randint(1, 100), '\n')
         
 # run program
 selectionMenu()
