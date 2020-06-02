@@ -12,7 +12,7 @@ def selectionMenu():
     print("7. D100")
     print("8. Quit")
         
-    select = int(input("Select a Di to Roll: "))
+    select = int(input("Select one of the above options: "))
     
     # First batch will not include modifiers
     if select == 1:
@@ -65,26 +65,33 @@ def modifier():
         else:
             return num      
         
+#Selection of di
 def di_Four():
-    print("You rolled:", random.randint(1, 4), '\n')
+    modifier() #Current challenge, having this work with the random int to give total value.
+    print("You rolled:", random.randint(1, 4), '\n',)
     
 def di_Six():
-    print(random.randint(1, 6), '\n')
+    modifier()
+    print("You rolled:", random.randint(1, 6), '\n')
     
 def di_Eight():
-    print(random.randint(1, 8), '\n')
+    modifier()
+    print("You rolled:", random.randint(1, 8), '\n')
     
 def di_Ten():
-    print(random.randint(1, 10), '\n')
+    modifier()
+    print("You rolled:", random.randint(1, 10), '\n')
     
 def di_Twelve():
- print(random.randint(1, 12), '\n')
+    modifier()
+    print("You rolled:", random.randint(1, 12), '\n')
     
 def di_Twenty():
-    print(random.randint(1, 20), '\n')
+    modifier()
+    print("You rolled:", random.randint(1, 20), '\n')
     
 def di_Hundred():   
-    print(random.randint(1, 100), '\n')
+    print("You rolled:", random.randint(1, 100), '\n')
         
 # run program
 selectionMenu()
