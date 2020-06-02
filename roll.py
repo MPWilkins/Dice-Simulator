@@ -43,7 +43,7 @@ def selectionMenu():
         selectionMenu() # runs program again if outside of parameters
         
 # Asks the user if another di should be rolled.
-# for a multi=select statement with numberous input, use the keyword "in" instead of == and put the answers in a square bracket for the right answer.
+# for a multi-select statement with numberous input, use the keyword "in" instead of == and put the answers in a square bracket for the right answer.
 def roll_Again():
     select = input("Would you like to roll another Di Y/N: ")
     if select in ['y', 'Y']:
@@ -55,10 +55,18 @@ def roll_Again():
         roll_Again()
     
 # Place the modifier function here.
-        
+def modifier():
+    while True:
+        try:
+            num = int(input("Input numerical modidifer (If no modifier, use 0): "))
+        except ValueError:
+            print ("Invalid Entry. Try Again.")
+            continue
+        else:
+            return num      
         
 def di_Four():
-    print(random.randint(1, 4), '\n')
+    print("You rolled:", random.randint(1, 4), '\n')
     
 def di_Six():
     print(random.randint(1, 6), '\n')
