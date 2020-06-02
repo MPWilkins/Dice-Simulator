@@ -1,5 +1,3 @@
-# Todo - Loop until the user selects the quit option.
-
 #This should allow me to find a random int in a set range.
 import random
 
