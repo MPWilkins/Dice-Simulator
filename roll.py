@@ -67,8 +67,14 @@ def modifier():
         
 #Selection of di
 def di_Four():
-    modifier() #Current challenge, having this work with the random int to give total value.
-    print("You rolled:", random.randint(1, 4), '\n',)
+    newNum = modifier()
+    randomNum = random.randint(1, 4)
+    print("You rolled:", randomNum)
+    # 1. display modifier again
+    print("Your Modifier:", newNum)
+    # 2. add num to random for the final result of the roll.
+    totalRoll = randomNum + newNum
+    print("Roll with modifier:", totalRoll, '\n')
     
 def di_Six():
     modifier()
