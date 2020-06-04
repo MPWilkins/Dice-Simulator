@@ -70,34 +70,53 @@ def di_Four():
     newNum = modifier()
     randomNum = random.randint(1, 4)
     print("You rolled:", randomNum)
-    # 1. display modifier again
     print("Your Modifier:", newNum)
-    # 2. add num to random for the final result of the roll.
     totalRoll = randomNum + newNum
     print("Roll with modifier:", totalRoll, '\n')
     
 def di_Six():
-    modifier()
-    print("You rolled:", random.randint(1, 6), '\n')
+    newNum = modifier()
+    randomNum = random.randint(1, 6)
+    print("You rolled:", randomNum)
+    print("Your Modifier:", newNum)
+    totalRoll = randomNum + newNum
+    print("Roll with modifier:", totalRoll, '\n')
     
 def di_Eight():
-    modifier()
-    print("You rolled:", random.randint(1, 8), '\n')
+    newNum = modifier()
+    randomNum = random.randint(1, 8)
+    print("You rolled:", randomNum)
+    print("Your Modifier:", newNum)
+    totalRoll = randomNum + newNum
+    print("Roll with modifier:", totalRoll, '\n')
     
 def di_Ten():
-    modifier()
-    print("You rolled:", random.randint(1, 10), '\n')
+    newNum = modifier()
+    randomNum = random.randint(1, 10)
+    print("You rolled:", randomNum)
+    print("Your Modifier:", newNum)
+    totalRoll = randomNum + newNum
+    print("Roll with modifier:", totalRoll, '\n')
     
 def di_Twelve():
-    modifier()
-    print("You rolled:", random.randint(1, 12), '\n')
+    newNum = modifier()
+    randomNum = random.randint(1, 12)
+    print("You rolled:", randomNum)
+    print("Your Modifier:", newNum)
+    totalRoll = randomNum + newNum
+    print("Roll with modifier:", totalRoll, '\n')
     
 def di_Twenty():
-    modifier()
-    print("You rolled:", random.randint(1, 20), '\n')
+    newNum = modifier()
+    randomNum = random.randint(1, 20)
+    print("You rolled:", randomNum)
+    print("Your Modifier:", newNum)
+    totalRoll = randomNum + newNum
+    print("Roll with modifier:", totalRoll, '\n')
     
-def di_Hundred():   
-    print("You rolled:", random.randint(1, 100), '\n')
+def di_Hundred():
+    randomNum = random.randint(1, 100)   
+    print("You rolled:", randomNum, '\n')
         
 # run program
 selectionMenu()
