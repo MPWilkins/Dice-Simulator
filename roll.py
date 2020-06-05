@@ -1,6 +1,6 @@
-#Imports the random library.
 import random
 
+# What di is to be rolled
 def selectionMenu():
     print ("Which kind of D&D Di are you wanting to roll?")
     print("1. D4")
@@ -38,13 +38,12 @@ def selectionMenu():
                 roll_Again()
         except ValueError:
             print("Invalid entry. Try again. \n")
-            continue # This continues the use of the program if there is a value error.
+            continue
         else:
             if select == 8:
-                quit() #Using quit will exit the entire program. Study some more on sys.exit(), seems that is good practice.
+                quit()
         
-# Asks the user if another di should be rolled.
-# for a multi-select statement with numberous input, use the keyword "in" instead of == and put the answers in a square bracket for the right answer.
+# Gives user option to roll di again
 def roll_Again():
     select = input("Would you like to roll another Di Y/N: ")
     if select in ['y', 'Y']:
@@ -55,7 +54,7 @@ def roll_Again():
         print("Please use either 'Y' or 'N.' \n")
         roll_Again()
     
-# Place the modifier function here.
+# Modifies based on bonuses
 def modifier():
     while True:
         try:
