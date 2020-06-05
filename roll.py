@@ -11,10 +11,10 @@ def selectionMenu():
     print("6. D20")
     print("7. D100")
     print("8. Quit")
-        
-    select = int(input("Select one of the above options: "))
+    
     while True:
         try:
+            select = int(input("Select one of the above options: "))
             if select == 1:
                 di_Four()
                 roll_Again()
@@ -37,7 +37,7 @@ def selectionMenu():
                 di_Hundred()
                 roll_Again()
         except ValueError:
-            print("Invalid Number. Try again. \n")
+            print("Invalid entry. Try again. \n")
             continue # This continues the use of the program if there is a value error.
         else:
             if select == 8:
